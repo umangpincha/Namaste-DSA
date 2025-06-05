@@ -17,8 +17,9 @@
 //     return count;
 // }
 
+// TODO: Max number
 function findLargest(arr) {
-  let maxValue = -1;
+  let maxValue = -Infinity;
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] > maxValue) {
       maxValue = arr[i];
@@ -27,6 +28,18 @@ function findLargest(arr) {
   return maxValue;
 }
 
-let arr = [1, 2, -3, -23, 650, 7, 999, 32];
-let ans = findLargest(arr);
+// TODO: Min number
+function findMin(arr) {
+  let minValue = Infinity;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < minValue) {
+      minValue = arr[i];
+    }
+  }
+  return minValue;
+}
+
+let arr = [-9, -19, -3];
+// let ans = findLargest(arr);
+let ans = findMin(arr);
 console.log(ans);
